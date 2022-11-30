@@ -2,16 +2,16 @@
 CS213: Project 5
 
 RUPizzeria is a local student-favorite pizzeria that is known for their infamous two styles of pizzas---Chicago and New York! Each style comes with its own unique crust in 4 flavors (Deluxe, Meatzza, BBQChicken, BuildYourOwn), 3 sizes (Small, Medium, Large), and an array of specific toppings!
-1. Deluxe Pizza
+1. :mushroom: *Deluxe Pizza*
   - Crust: Deep Dish (Chicago), Pan (NY)
   - Toppings: Sausage, Pepperoni, Green Pepper, Onion, Mushroom
-2. Meatzza Pizza
+2. :poultry_leg: *Meatzza Pizza*
   - Crust: Stuffed (Chicago), Hand-tossed (NY)
   - Toppings: Sausage, Pepperoni, Beef, Ham
-3. BBQChicken Pizza
+3. :cheese: *BBQChicken Pizza*
   - Crust: Pan (Chicago), Thin (NY)
   - Toppings: BBQ Chicken, Green Pepper, Provolone, Cheddar
-4. BuildYourOwn Pizza
+4. :bowl_with_spoon: *BuildYourOwn Pizza*
   - Crust: Pan (Chicago), Hand--tossed (NY)
   - Toppings: Customizable up to 7 toppings.
 
@@ -32,5 +32,8 @@ Customers can view all pizzas added to current order, the subtotal, sales tax, a
 RUPizzeria staff can view the number of orders remaining and access the placed orders with the pizza details. Once an order is complete, the staff can click on the order in order to remove it from the pending list. Additionally, the staff can clear the entire pending list if all orders are complete.
 
 <p align="center">
-![image](https://user-images.githubusercontent.com/98361155/204926015-dcd04a8e-c75b-41dc-b220-481c3e334903.png)
+<img width="270" height="555" src="https://user-images.githubusercontent.com/98361155/204927784-ab1518f9-261f-4786-8c01-cc79ecd25afa.png" alt="logo" title="Logo">
+</p>
+<p align="center">
+Rendered on Google Pixel 3a.
 </p>
