@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:layout_margin="50sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chicagoStyle"
+        android:text="@string/chicago_style"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_margin="80sp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/title" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nyStyle"
+        android:text="@string/ny_style"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_margin="80sp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/chicagoStyle" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/currOrder"
+        android:text="@string/current_order"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_margin="80sp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/nyStyle" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stOrder"
+        android:text="@string/store_orders"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_margin="80sp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/currOrder" />
+
+    <ImageView
+        android:id="@+id/imageImageView"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_margin="25sp"
+        android:contentDescription="@string/logoImage"
+        android:src="@drawable/rupizzerialogo"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stOrder" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

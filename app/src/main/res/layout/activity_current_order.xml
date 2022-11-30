@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".CurrentOrderActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:gravity="center"
+                android:padding="5sp"
+                android:text="@string/current_order"
+                android:textColor="@color/red"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/orderNumberTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:gravity="start"
+                    android:labelFor="@id/ordersRemainingEditText"
+                    android:text="@string/orderID"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/orderNumberEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@color/white"
+                    android:inputType="none"
+                    android:padding="5sp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="Autofill,TextFields,SpeakableTextPresentCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/placedPizzasTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:gravity="start"
+                    android:labelFor="@id/placedPizzasListView"
+                    android:text="@string/placedPizzas"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ListView
+                    android:id="@+id/placedPizzasListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="300sp"
+                    android:layout_margin="5sp"
+                    android:background="@color/white"
+                    android:padding="5sp"
+                    android:popupBackground="@color/gray"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/subtotalTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:gravity="start"
+                    android:labelFor="@id/subtotalEditText"
+                    android:text="@string/subtotal"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/subtotalEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@color/white"
+                    android:inputType="none"
+                    android:padding="5sp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="Autofill,SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+                <TextView
+                    android:id="@+id/taxTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:gravity="start"
+                    android:labelFor="@id/taxEditText"
+                    android:text="@string/tax"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/taxEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@color/white"
+                    android:inputType="none"
+                    android:padding="5sp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="Autofill,SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+                <TextView
+                    android:id="@+id/totalTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:gravity="start"
+                    android:labelFor="@id/totalEditText"
+                    android:text="@string/total"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/totalEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@color/white"
+                    android:inputType="none"
+                    android:padding="5sp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="Autofill,SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/clearOrderButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:layout_weight="1"
+                    android:text="@string/clearOrder"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/placeOrderButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:layout_weight="1"
+                    android:text="@string/placeOrder"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:ignore="ButtonStyle" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/mainButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="@string/backToMain" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

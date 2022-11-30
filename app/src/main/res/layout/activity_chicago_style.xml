@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ChicagoStyleActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:gravity="center"
+                android:text="@string/chicago_style"
+                android:textColor="@color/red"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/flavorTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:gravity="start"
+                android:labelFor="@id/flavorSpinner"
+                android:text="@string/flavor"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/flavorSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@color/white"
+                android:padding="5sp"
+                android:popupBackground="@color/gray"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/sizeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:gravity="start"
+                android:labelFor="@id/sizeSpinner"
+                android:text="@string/size"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/sizeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@color/white"
+                android:padding="5sp"
+                android:popupBackground="@color/gray"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/toppingsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:gravity="start"
+                android:text="@string/toppings"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250sp"
+                android:orientation="horizontal">
+
+                <ListView
+                    android:id="@+id/allToppingsListView"
+                    android:layout_width="195sp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5sp"
+                    android:background="@color/white"
+                    android:padding="5sp"
+                    android:popupBackground="@color/gray"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold">
+
+                </ListView>
+
+                <ListView
+                    android:id="@+id/currentToppingsListView"
+                    android:layout_width="195sp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5sp"
+                    android:background="@color/white"
+                    android:padding="5sp"
+                    android:popupBackground="@color/gray"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/priceEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="none"
+                android:padding="5sp"
+                android:text="@string/default_price"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="Autofill,LabelFor,TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/imageImageView"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:contentDescription="@string/pizzaImage"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/placePizzaButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="@string/addToOrder"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/mainButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="@string/backToMain" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

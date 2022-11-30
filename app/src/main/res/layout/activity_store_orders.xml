@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".StoreOrdersActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:gravity="center"
+                android:padding="5sp"
+                android:text="@string/store_orders"
+                android:textColor="@color/red"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ordersRemainingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:gravity="start"
+                    android:labelFor="@id/ordersRemainingEditText"
+                    android:text="@string/ordersRemaining"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ordersRemainingEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@color/white"
+                    android:inputType="none"
+                    android:padding="5sp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="Autofill,TextFields,DuplicateSpeakableTextCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/placedOrdersTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:gravity="start"
+                    android:labelFor="@id/placedPizzasListView"
+                    android:text="@string/placedOrders"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ListView
+                    android:id="@+id/placedOrdersListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="370sp"
+                    android:layout_margin="5sp"
+                    android:background="@color/white"
+                    android:padding="5sp"
+                    android:popupBackground="@color/gray"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/totalTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:gravity="start"
+                    android:labelFor="@id/totalEditText"
+                    android:text="@string/total"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/totalEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginBottom="5sp"
+                    android:background="@color/white"
+                    android:inputType="none"
+                    android:padding="5sp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="Autofill,SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/cancelOrdersButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                android:text="@string/cancelOrders"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/mainButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="@string/backToMain" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
