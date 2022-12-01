@@ -79,9 +79,9 @@
 
     <ImageView
         android:id="@+id/imageImageView"
-        android:layout_width="200sp"
-        android:layout_height="200sp"
-        android:layout_margin="25sp"
+        android:layout_width="250sp"
+        android:layout_height="250sp"
+        android:layout_margin="35sp"
         android:contentDescription="@string/logoImage"
         android:src="@drawable/rupizzerialogo"
         android:layout_gravity="center"
