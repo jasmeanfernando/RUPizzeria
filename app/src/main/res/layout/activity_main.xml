@@ -7,16 +7,14 @@
     android:background="@color/black"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/title"
-        android:text="@string/app_name"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:textSize="50sp"
-        android:layout_margin="50sp"
-        android:gravity="center"
+    <ImageView
+        android:id="@+id/imageImageView"
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:layout_margin="20sp"
+        android:contentDescription="@string/logoImage"
+        android:src="@drawable/rupizzerialogo"
+        android:layout_gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,11 +27,11 @@
         android:textStyle="bold"
         android:textColor="@color/black"
         android:textSize="25sp"
-        android:layout_margin="80sp"
+        android:layout_margin="10sp"
         android:layout_centerHorizontal="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/title" />
+        app:layout_constraintTop_toBottomOf="@id/imageImageView" />
 
     <com.google.android.material.button.MaterialButton
         android:layout_width="wrap_content"
@@ -76,17 +74,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/currOrder" />
-
-    <ImageView
-        android:id="@+id/imageImageView"
-        android:layout_width="250sp"
-        android:layout_height="250sp"
-        android:layout_margin="35sp"
-        android:contentDescription="@string/logoImage"
-        android:src="@drawable/rupizzerialogo"
-        android:layout_gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/stOrder" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
