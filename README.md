@@ -32,8 +32,15 @@ Customers can view all pizzas added to current order, the subtotal, sales tax, a
 RUPizzeria staff can view the number of orders remaining and access the placed orders with the pizza details. Once an order is complete, the staff can click on the order in order to remove it from the pending list. Additionally, the staff can clear the entire pending list if all orders are complete.
 
 <p align="center">
-<img width="270" height="555" src="https://user-images.githubusercontent.com/98361155/204927784-ab1518f9-261f-4786-8c01-cc79ecd25afa.png" alt="logo" title="Logo">
+<img width="270" height="555" src="https://user-images.githubusercontent.com/98361155/209886590-7261d1d5-fbff-4b7c-bded-2271bea799e7.png" alt="logo" title="Logo">
 </p>
+
+<p align="center">
+<img width="270" height="555" src="https://user-images.githubusercontent.com/98361155/209886618-5e1d1c27-12e0-42ad-b7f0-116b44c99910.png" alt="styleview" title="StyleView">
+<img width="270" height="555" src="https://user-images.githubusercontent.com/98361155/209886637-d106ecf1-735d-48fc-a08f-3748688a94e9.png" alt="order" title="Order">
+<img width="270" height="555" src="https://user-images.githubusercontent.com/98361155/209886664-bc055984-e328-4016-8f9b-d7e9ae5a290b.png" alt="storeorders" title="StoreOrders">
+</p>
+
 <p align="center">
 Rendered on Google Pixel 3a.
 </p>
