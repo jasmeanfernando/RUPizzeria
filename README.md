@@ -5,17 +5,21 @@ RUPizzeria is a local student-favorite pizzeria that is known for their infamous
 1. :mushroom: *Deluxe Pizza*
   - Crust: Deep Dish (Chicago), Pan (NY)
   - Toppings: Sausage, Pepperoni, Green Pepper, Onion, Mushroom
+  - Sizes: Small ($14.99), Medium ($16.99), Large ($18.99)
 2. :poultry_leg: *Meatzza Pizza*
   - Crust: Stuffed (Chicago), Hand-tossed (NY)
   - Toppings: Sausage, Pepperoni, Beef, Ham
+  - Sizes: Small ($15.99), Medium ($17.99), Large ($19.99)
 3. :cheese: *BBQChicken Pizza*
   - Crust: Pan (Chicago), Thin (NY)
   - Toppings: BBQ Chicken, Green Pepper, Provolone, Cheddar
+  - Sizes: Small ($13.99), Medium ($15.99), Large ($17.99)
 4. :bowl_with_spoon: *BuildYourOwn Pizza*
   - Crust: Pan (Chicago), Hand--tossed (NY)
-  - Toppings: Customizable up to 7 toppings.
+  - Toppings: Customizable up to 7 toppings free.
+  - Sizes: Small ($8.99), Medium ($10.99), Large ($12.99)
 
-RUPizzeria is an Android app that allows customers to place orders. Customers are able to customize their pizza, add it to their order, and place as many orders as needed! While customizing, customers will be able to see the change in price as they toggle between different flavors, sizes, and toppings. RUPizzeria offers up to 13 toppings. For each additional topping, it will cost $1.59. Once a pizza is added to the order, customers can view the receipt of their order (subtotal, sales tax, and total) and edit their order (remove pizzas, clear the entire order, or place the order). There is a sales tax of 6.625%. The RUPizzeria staff can then access the placed orders (with the pizza details) and get started on the pizzas!
+RUPizzeria is an Android app that allow customers to place orders. Customers are able to customize their pizza, add it to their order, and place as many orders as needed! While customizing, customers will be able to see the change in price as they toggle between different flavors, sizes, and toppings. RUPizzeria offers up to 13 toppings. For each additional topping, it will cost $1.59. Once a pizza is added to the order, customers can view the receipt of their order (subtotal, sales tax, and total) and edit their order (remove pizzas, clear the entire order, or place the order). There is a sales tax of 6.625%. The RUPizzeria staff can then access the placed orders (with the pizza details) and get started on the pizzas!
 
 # :bell_pepper: RUPizzeria Functions
 
